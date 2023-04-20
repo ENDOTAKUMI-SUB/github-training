@@ -16,7 +16,7 @@ $ cd github-training
 リモートリポジトリからfetchする
 $ git fetch origin develop
 
-developブランチにに移動
+developブランチに移動
 $ git checkout develop
 
 今いるブランチを確認
