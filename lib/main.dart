@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
 
+/*
+  コメントの参考記事
+  https://qiita.com/chooyan_eng/items/07b8d4b9b3f4c254d542
+ */
 void main() {
   runApp(const MyApp());
 }
@@ -7,7 +11,9 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-  // このウィジェットは、アプリケーションのルートとなるものです。
+  /*
+    このウィジェットは、アプリケーションのルートとなるものです。
+   */
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
