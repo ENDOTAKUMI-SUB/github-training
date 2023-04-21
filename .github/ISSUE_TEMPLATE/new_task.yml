@@ -1,7 +1,7 @@
 name: 新規タスク(New Task)
 description: 新規タスク用issueを作成する
-title: "[task]: "
-labels: []
+title: "[Feature]: "
+labels: ["🌟 feature"]
 body:
   - type: textarea
     id: purpose
