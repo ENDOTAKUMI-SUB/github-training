@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 
 /*
   コメントの参考記事
@@ -60,6 +61,8 @@ class _MyHomePageState extends State<MyHomePage> {
   int _counter = 0;
 
   void _incrementCounter() {
+    HapticFeedback.mediumImpact();
+
     setState(() {
       /*
         この setState を呼び出すことで、 Flutter フレームワークに対して
