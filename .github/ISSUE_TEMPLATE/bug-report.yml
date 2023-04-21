@@ -37,27 +37,17 @@ body:
       description: その機能がするべきはずの動作を教えてください(A description of what you expected to happen)
     validations:
       required: false
-  - type: dropdown
-    id: version
-    attributes:
-      label: Version
-      description: 実行していたゲームモードを教えてください
-      options:
-        - ローカル対戦モード
-        - ボット対戦モード
-        - 観戦モード
-    validations:
-      required: false
+
   - type: dropdown
     id: browsers
     attributes:
-      label: 使用したブラウザを教えてください(What browsers are you seeing the problem on?)
+      label: エラーが発生したOSを教えて下さい。
       multiple: true
       options:
-        - Firefox
-        - Chrome
-        - Safari
-        - Microsoft Edge
+        - Android, iOS
+        - Androidのみ
+        - iOSのみ
+        
   - type: textarea
     id: logs
     attributes:
