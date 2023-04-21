@@ -68,3 +68,8 @@ body:
     id: other
     attributes:
       label: その他(other)
+        
+  - type: markdown
+    attributes:
+      value: |
+        この修正を始める際、hotfix/#issue番号_動詞_機能 でブランチを切ってください。
