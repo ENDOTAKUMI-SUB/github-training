@@ -51,3 +51,8 @@ body:
         * 
     validations:
       required: false
+      
+  - type: markdown
+    attributes:
+      value: |
+        この機能の開発を始める際、feature/#issue番号_動詞_機能 でブランチを切ってください。
