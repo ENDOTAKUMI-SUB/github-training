@@ -17,7 +17,7 @@ body:
       label: タスクリスト
       description: このタスクの達成に必要な作業を具体的に列挙してください。
       value: |
-        + [ ] 
+        - [ ] 
     validations:
       required: false
   - type: textarea
