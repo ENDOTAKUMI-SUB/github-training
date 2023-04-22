@@ -77,6 +77,11 @@ class _MyHomePageState extends State<MyHomePage> {
     });
   }
 
+  // TODO _decrementCounter
+
+
+  // TODO _resetCounter
+
   @override
   Widget build(BuildContext context) {
     /*
@@ -132,9 +137,15 @@ class _MyHomePageState extends State<MyHomePage> {
               '$_counter',
               style: Theme.of(context).textTheme.headlineMedium,
             ),
+
+            // TODO リセットボタンを作成
+
           ],
         ),
       ),
+
+      // TODO FloatingActionButtonを２つにする
+
       floatingActionButton: FloatingActionButton(
         onPressed: _incrementCounter,
         tooltip: 'Increment',
