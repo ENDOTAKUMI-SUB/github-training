@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 /*
   コメントの参考記事
@@ -18,6 +19,8 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      localizationsDelegates: AppLocalizations.localizationsDelegates,
+      supportedLocales: AppLocalizations.supportedLocales,
       title: 'Flutter Demo',
       theme: ThemeData(
         /*
@@ -31,6 +34,7 @@ class MyApp extends StatelessWidget {
          */
         primarySwatch: Colors.blue,
       ),
+      // TODO 多言語対応未対応
       home: const MyHomePage(title: 'Flutter Demo Home Page'),
     );
   }
@@ -78,7 +82,6 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 
   // TODO _decrementCounter
-
 
   // TODO _resetCounter
 
@@ -130,16 +133,17 @@ class _MyHomePageState extends State<MyHomePage> {
 
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            const Text(
-              'You have pushed the button this many times:',
+            // 多言語対応済みのテキスト
+            Text(
+              AppLocalizations.of(context).counter_text,
             ),
+
             Text(
               '$_counter',
               style: Theme.of(context).textTheme.headlineMedium,
             ),
 
             // TODO リセットボタンを作成
-
           ],
         ),
       ),
