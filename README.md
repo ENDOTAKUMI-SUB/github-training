@@ -1,5 +1,13 @@
 # README
 
+## L10n対応
+1. スプレッドシートを記入
+2. tsv形式で保存
+3. lib/_DATAFILE.tsvにコピペ
+4. lib/_MAKE-ARB.dartを実行
+5. ターミナルで ```flutter gen-l10n``` を実行
+
+
 ```
 ルートに戻る
 $ cd 
